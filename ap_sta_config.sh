@@ -72,7 +72,7 @@ USAGE:
 PARAMETERS:
     -a, --ap      	    AP SSID & password
     -c, --client	    Client SSID & password
-    -i, --ip            AP IP (by default ip pattern 192.168.10.x)
+    -i, --ip            AP IP (by default ip pattern 192.168.240.x)
     -cy, --country      ISO3166 Country Code (by default FR)
     -hw, --hwmode       Mode Wi-Fi a = IEEE 802.11a, b = IEEE 802.11b, g = IEEE 802.11g (by default g)
 
@@ -168,7 +168,7 @@ fi
 
 WIFI_MODE=${ARG_WIFI_MODE:-'g'}
 COUNTRY_CODE=${ARG_COUNTRY_CODE:-'FR'}
-AP_IP=${ARG_AP_IP:-'192.168.10.1'}
+AP_IP=${ARG_AP_IP:-'192.168.240.1'}
 AP_IP_BEGIN=$(echo "${AP_IP}" | sed -e 's/\.[0-9]\{1,3\}$//g')
 MAC_ADDRESS="$(cat /sys/class/net/wlan0/address)"
 
