@@ -351,7 +351,7 @@ $([ "${NO_INTERNET-}" != "true" ] && echo "/usr/sbin/iptables -t nat -A POSTROUT
 $([ "${NO_INTERNET-}" != "true" ] && echo "/usr/bin/systemctl restart dnsmasq")
 echo 'WPA Supplicant reconfigure in 5sec...'
 /usr/bin/sleep 5
-wpa_cli -i wlan0 reconfigure
+/usr/sbin/wpa_cli -i wlan0 reconfigure
 
 EOF
     chmod +x /bin/rpi-wifi.sh
