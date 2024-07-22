@@ -6,10 +6,15 @@
     - Raspberry Pi Zero W 
     - Raspberry Pi 3 B+
     - Raspberry Pi 3 A+
+    - Raspberry Pi 4 B+ (bookworm)
 
 ## TODO add compatibility for B+ raspberry (with ethernet)
 
-### With distribution Raspbian Buster
+
+### With distribution Raspbian BookWorm
+```bash 
+apt install -y iptables hostapd dnsmasq dhcpcd5
+```
 
 ## Parameters
 ```bash
